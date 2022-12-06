@@ -218,8 +218,7 @@ int main() {
         // get ang_or_dec to determine what user is solving for
         std::cout << "Do you want to find an angle or decimal place (A/D): ";
         std::cin >> angOrDec;
-        std::cout << "\n"
-                  << "\n";
+        std::cout << "\n";
 
         if (angOrDec == 'a' || angOrDec == 'A') {
             // get input for x_string
@@ -314,7 +313,7 @@ int main() {
                 // solve sine for decimal
                 if (check == 1) {
                     // make sure x_float is less than 360
-                    if (xFloat > 360) {
+                    if (xFloat < 360) {
                         // assign sin to the function return
                         sin = CalSin(xFloat);
                         std::cout << "The value of sin(" << xFloat
@@ -329,7 +328,7 @@ int main() {
 
                 } else if (check == 2) {
                     // make sure x_float is less than 360
-                    if (xFloat > 360) {
+                    if (xFloat < 360) {
                         // assign cosine to the function return
                         cosine = CalCosine(xFloat);
                         std::cout << "The value of cos(" << xFloat
@@ -343,7 +342,7 @@ int main() {
                     }
                 } else if (check == 3) {
                     // make sure x_float is less than 360
-                    if (xFloat > 360) {
+                    if (xFloat < 360) {
                         // assign tangent to the function return
                         tangent = CalTangent(xFloat);
                         std::cout << "The value of tan(" << xFloat
@@ -358,7 +357,7 @@ int main() {
 
                 } else if (check == 4) {
                     // make sure x_float is less than 360
-                    if (xFloat > 360) {
+                    if (xFloat < 360) {
                         // assign cosecant to the function return
                         cosecant = CalCosecant(xFloat);
                         std::cout << "The value of csc(" << xFloat
@@ -373,7 +372,7 @@ int main() {
 
                 } else if (check == 5) {
                     // make sure x_float is less than 360
-                    if (xFloat > 360) {
+                    if (xFloat < 360) {
                         // assign secant to the function return
                         secant = CalSecant(xFloat);
                         std::cout << "The value of sec(" << xFloat
@@ -388,7 +387,7 @@ int main() {
 
                 } else if (check == 6) {
                     // make sure x_float is less than 360
-                    if (xFloat > 360) {
+                    if (xFloat < 360) {
                         // assign cotangent to the function return
                         cotangent = CalCotangent(xFloat);
                         std::cout << "The value of cot(" << xFloat
